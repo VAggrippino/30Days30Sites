@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-fami: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 }
 
 p {
@@ -57,4 +57,24 @@ p {
 .about {
   background-color: #111;
   color: #ddd;
+}
+
+.about .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .row > div {
+  text-align: center;
+}
+
+.about .row > div a img {
+  display: inline-block;
+  flex: 0;
+  border: 4px solid transparent;
+  transition: border-color 0.4s;
+}
+
+.about .row > div a:hover img {
+  border-color: DodgerBlue;
 }
