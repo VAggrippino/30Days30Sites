@@ -262,6 +262,7 @@ footer .social a:hover {
 
   aside {
     min-width: 15rem;
+    margin: 0;
   }
 
   footer .social ul {
