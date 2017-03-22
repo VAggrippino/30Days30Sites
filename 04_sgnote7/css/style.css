@@ -50,6 +50,8 @@ header h1 {
 
 .product .title {
   text-align: center;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 .product section {
