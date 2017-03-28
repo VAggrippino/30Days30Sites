@@ -84,9 +84,41 @@ header a {
   margin: 2rem 0;
 }
 
+.trailer {
+  position: relative;
+}
+
 .trailer video {
   width: 100%;
   max-width: 1280px;
+}
+
+.trailer:after {
+  font-family: 'FontAwesome';
+  content: ' ';
+  font-size: 2rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+.trailer.play:after, .trailer.pause:after {
+  animation: 1s fadeAway;
+}
+
+.trailer.play:after {
+  content: '\f04b';
+}
+
+.trailer.pause:after {
+  content: '\f04c';
+}
+
+@keyframes fadeAway {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
 /* Footer */
