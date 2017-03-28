@@ -149,6 +149,28 @@ header a {
   margin: 0.5rem;
 }
 
+.see {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17,17,17,0.5);
+}
+
+.see h3 {
+  width: 100%;
+}
+
+.see a {
+  color: DodgerBlue;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0.5em;
+  font-size: 2rem;
+}
+
 /* Footer */
 footer {
   background-color: rgba(17,17,17,0.3);
