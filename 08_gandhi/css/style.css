@@ -45,6 +45,43 @@ main {
   padding-right: 1rem;
 }
 
+main .timeline td {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+main .timeline td:first-child {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.about blockquote {
+  position: relative;
+}
+
+.about blockquote:before, .about blockquote:after {
+  font-family: 'FontAwesome';
+  color: #aaa;
+  position: absolute;
+}
+
+.about blockquote:before {
+  content: '\f10d';
+  top: -0.5em;
+  left: -1.5em;
+}
+
+.about blockquote:after {
+  content: '\f10e';
+  bottom: -0.5em;
+  right: -1em;
+}
+
+.about .byline {
+  font-style: italic;
+}
+
 /* Footer */
 footer {
   background-color: #2d1912;
