@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
 <head>
   <title>Mahatma Gandhi</title>
   <meta charset="utf-8">
@@ -36,6 +36,26 @@
   <meta name="twitter:title" content="Mahatma Gandhi">
   <meta name="twitter:description" content="30 Days, 30 Sites, exercise 8, Celebrity Fan Page, Mahatma Gandhi">
   <meta name="twitter:image" content="https://vaggrippino.github.io/30Days30Sites/08_gandhi/media/page_thumbnail.png">
+
+  <!-- https://github.com/mnater/Hyphenopoly -->
+  <script>
+    var Hyphenopoly = {
+      require: {
+        'la': 'honorificabilitudinitas',
+        'en-us': 'automatically'
+      },
+      paths: {
+        patterndir: "js/patterns/",
+        maindir: "js/"
+      },
+      setup: {
+        classnames: {
+          'hyphenate': {}
+        }
+      }
+    };
+  </script>
+  <script src="js/Hyphenopoly_Loader.js"></script>
 </head>
 <body>
 
@@ -133,10 +153,10 @@
     </tr>
   </table>
   <div class="about">
-    <blockquote>
-      The admiration for Mahatma Gandhi in all countries of the world rests on recognition, mostly sub-conscious, recognition of the fact that in our time of utter moral decadence, he was the only statesman to stand for a higher level of human relationship in political sphere. This level we must, with all our forces, attempt to reach. We must learn the difficult lesson that an endurable future of humanity will be possible only if, also in international relations, decisions are based on law and justice and not on self-righteous power, as they have been upto now.
+    <blockquote class="hyphenate">
+      The admiration for Mahatma Gandhi in all countries of the world rests on recognition, mostly subconscious, recognition of the fact that in our time of utter moral decadence, he was the only statesman to stand for a higher level of human relationship in political sphere. This level we must, with all our forces, attempt to reach. We must learn the difficult lesson that an endurable future of humanity will be possible only if, also in international relations, decisions are based on law and justice and not on self-righteous power, as they have been upto now.
     </blockquote>
-    <p class="byline">Albert Einstein, as quoted in Mahatma Gandhi and the U.S.A.‎ (1949) by Pasupuleti Gopala Krishnayya, p. 399</p>
+    <p class="byline">-- Albert Einstein, as quoted in Mahatma Gandhi and the U.S.A.‎ (1949) by Pasupuleti Gopala Krishnayya, p. 399</p>
   </div>
 </main>
 
