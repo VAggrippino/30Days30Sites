@@ -39,9 +39,15 @@ header .quote {
   width: 50vw;
 }
 
+main {
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* Footer */
 footer {
-  background-color: #111;
+  background-color: #2d1912;
   color: #ddd;
   text-align: center;
   padding: 1rem;
