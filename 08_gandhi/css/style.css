@@ -32,6 +32,7 @@ header .headerPic {
 
 header .quote {
   font-family: 'Patrick Hand', cursive;
+  font-size: 4vw;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
@@ -43,11 +44,12 @@ main {
   box-sizing: border-box;
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 50rem;
+  margin: auto;
 }
 
 main .timeline td {
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding: 0.25em 0.75em;
 }
 
 main .timeline td:first-child {
