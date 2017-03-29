@@ -14,6 +14,31 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+header {
+  /*background-color: #2d1912;*/
+  background-image: radial-gradient(#9a5e4a, #2d1912);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  color: white;
+}
+
+header .headerPic {
+  background: center 100%/contain no-repeat;
+  width: 50vw;
+  min-height: calc(50vw * 0.75);
+  filter: sepia(100%) hue-rotate(350deg);
+}
+
+header .quote {
+  font-family: 'Patrick Hand', cursive;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
 /* Footer */
 footer {
   background-color: #111;
