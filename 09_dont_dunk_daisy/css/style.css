@@ -19,7 +19,7 @@ body {
   --radius: 0.5vh;
   --trapdoorSize: 45%;
   margin: 2vh 2vw;
-  margin-top: 15vh;
+  margin-top: 22vw;
   width: 30vw;
   height: 20vw;
   position: relative;
@@ -28,9 +28,9 @@ body {
 .platform .daisy {
   background: url(../media/version2-yellow-tiger-cat.svg) no-repeat center;
   width: 100%;
-  height: 13vh;
+  height: 20vw;
   position: absolute;
-  top: -14vh;
+  top: -21vw;
   filter: hue-rotate(230deg);
 }
 
@@ -68,14 +68,14 @@ body {
   z-index: 200;
 }
 
-.platform .trapdoor.open {
+.platform.open .trapdoor {
   transform-origin: 100%;
   transform: rotate(-90deg);
 }
 
 .platform .legs {
   position: absolute;
-  top: 0.5vh;
+  top: 1vh;
   left: 0;
   width: 100%;
   height: 100%;
@@ -90,6 +90,7 @@ body {
   background-color: var(--color);
   position: absolute;
   top: 0;
+  transform-origin: top;
 }
 
 .platform .leg2 {
@@ -97,7 +98,7 @@ body {
 }
 
 .platform .leg3, .platform .leg4 {
-  transform: scale(0.8);
+  transform: scale(0.9);
   top: 0vh;
 }
 
