@@ -77,20 +77,26 @@ body {
 
 .platform .trapdoor {
   width: var(--trapdoorSize);
-  height: 1vh;
+  height: 2vh;
   background-color: var(--color);
   border: 1px solid black;
   border-radius: var(--radius);
   position: relative;
-  top: 1vh;
+  top: 2vh;
   z-index: 200;
 }
 
 /* .open */
 .platform.open .trapdoor {
-  transform-origin: 100%;
-  transform: rotate(-90deg);
+  /*transform-origin: 100%;
+  transform: rotate(-90deg);*/
 }
+
+.platform.open1 .trapdoor { transform: translateX(20%); }
+.platform.open2 .trapdoor { transform: translateX(40%); }
+.platform.open3 .trapdoor { transform: translateX(60%); }
+.platform.open4 .trapdoor { transform: translateX(80%); }
+.platform.open5 .trapdoor { transform: translateX(100%); }
 
 .platform.open .daisy {
   top: 26vh;
@@ -230,6 +236,10 @@ body {
   flex: 1 0;
 }
 
+.blanks .blank.show {
+  visibility: visible;
+}
+
 .blanks .blank:after {
   content: '_';
   visibility: visible;
@@ -274,6 +284,12 @@ body {
   position: absolute;
   bottom: 0.3em;
   left: 0;
+}
+
+.letters .letter.used {
+  border-color: #aaa;
+  color: #aaa;
+  background-color: #ddd;
 }
 
 /* Footer */
