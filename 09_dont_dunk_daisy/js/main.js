@@ -1,3 +1,5 @@
+//document.getElementById('sound-intro').play();
+
 // Define the list of words and pick one.
 const words = [
   {'word': 'apple', 'image': 'media/simple-apple.svg'},
@@ -8,7 +10,7 @@ const n = Math.floor(Math.random() * words.length);
 
 // Create the blanks
 const solution = document.getElementById('solution');
-const blanks = solution.querySelector('.blanks');
+const answer = document.getElementById('answer');
 const clue = solution.querySelector('.clue');
 
 for (let i = 0; i < words[n].word.length; i++) {
@@ -17,7 +19,7 @@ for (let i = 0; i < words[n].word.length; i++) {
   div.classList.add('blank');
   div.dataset.letter = letter;
   div.innerText = letter;
-  blanks.appendChild(div)
+  answer.appendChild(div)
 }
 
 clue.style.backgroundImage = `url(${words[n].image})`;
@@ -27,6 +29,7 @@ const platform = document.getElementById('platform');
 let errors = 0;
 let gameOver = false;
 const letters = document.querySelectorAll('.letters .letter');
+const blanks = answer.querySelectorAll('.blank');
 letters.forEach(letter => {
   letter.addEventListener('click', e => {
     if (letter.classList.contains('used')) return false;
@@ -35,15 +38,28 @@ letters.forEach(letter => {
     letter.classList.add('used');
 
     if (words[n].word.indexOf(value) !== -1) {
-      blanks.querySelectorAll('.blank').forEach(blank => {
+      document.getElementById('sound-Right').play();
+      blanks.forEach(blank => {
         if (blank.dataset.letter == value) blank.classList.add('show');
       });
+
+      let win = true;
+      blanks.forEach(blank => {
+        if (!blank.classList.contains('show')) win = false;
+      });
+      if (win) {
+        document.getElementById('sound-Win').play();
+        gameOver = true;
+      }
+
     } else {
+      document.getElementById('sound-Wrong').play();
       errors++;
       platform.classList.remove('open1', 'open2', 'open3', 'open4', 'open5');
       platform.classList.add(`open${errors}`);
 
       if (errors == 5) {
+        document.getElementById('sound-WetCat').play();
         platform.classList.add('open');
         gameOver = true;
       }
