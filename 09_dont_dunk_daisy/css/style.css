@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .game {
@@ -90,7 +94,7 @@ body {
 
 .platform.open .daisy {
   top: 26vh;
-  animation: 2s alternate infinite bobbing;
+  /*animation: 2s alternate infinite bobbing;*/
 }
 
 @keyframes bobbing {
