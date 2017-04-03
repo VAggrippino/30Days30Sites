@@ -225,6 +225,7 @@ header h1 {
 }
 
 .answer {
+  font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   font-weight: bold;
   display: flex;
