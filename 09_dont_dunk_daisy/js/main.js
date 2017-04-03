@@ -58,7 +58,7 @@ letters.forEach(letter => {
       platform.classList.remove('open1', 'open2', 'open3', 'open4', 'open5');
       platform.classList.add(`open${errors}`);
 
-      if (errors == 5) {
+      if (errors == 3) {
         document.getElementById('sound-WetCat').play();
         platform.classList.add('open');
         gameOver = true;

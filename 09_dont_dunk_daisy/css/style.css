@@ -96,11 +96,13 @@ header h1 {
 }
 
 /* .open */
-.platform.open1 .trapdoor { transform: translateX(20%); }
-.platform.open2 .trapdoor { transform: translateX(40%); }
-.platform.open3 .trapdoor { transform: translateX(60%); }
+.platform.open1 .trapdoor { transform: translateX(33%); }
+.platform.open2 .trapdoor { transform: translateX(66%); }
+.platform.open3 .trapdoor { transform: translateX(100%); }
+/*
 .platform.open4 .trapdoor { transform: translateX(80%); }
 .platform.open5 .trapdoor { transform: translateX(100%); }
+*/
 
 .platform.open .daisy {
   top: calc(var(--tankHeight) * 1.2);
