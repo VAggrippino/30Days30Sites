@@ -38,6 +38,7 @@ letters.forEach(letter => {
     letter.classList.add('used');
 
     if (words[n].word.indexOf(value) !== -1) {
+      letter.classList.add('right');
       document.getElementById('sound-Right').play();
       blanks.forEach(blank => {
         if (blank.dataset.letter == value) blank.classList.add('show');
@@ -57,6 +58,7 @@ letters.forEach(letter => {
       errors++;
       platform.classList.remove('open1', 'open2', 'open3', 'open4', 'open5');
       platform.classList.add(`open${errors}`);
+      letter.classList.add('wrong');
 
       if (errors == 3) {
         document.getElementById('sound-WetCat').play();

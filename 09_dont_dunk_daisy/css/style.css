@@ -150,7 +150,7 @@ header h1 {
 }
 
 .tank {
-  --waveSize: 2rem;
+  --waveSize: 6vw;
   width: 60%;
   height: var(--tankHeight);
   background-color: DodgerBlue;
@@ -288,12 +288,12 @@ header h1 {
   position: relative;
 }
 
-.letters .letter:after {
+.letters .letter:before {
   content: '';
   display: block;
   width: 100%;
   height: 0;
-  border-bottom: 1px dotted rgba(0,0,255,0.75);
+  border-bottom: 1px dotted rgba(0,0,255,0.5);
   position: absolute;
   bottom: 0.3em;
   left: 0;
@@ -303,6 +303,27 @@ header h1 {
   border-color: #aaa;
   color: #aaa;
   background-color: #ddd;
+}
+
+.letters .letter.used:after {
+  display: block;
+  font-size: 0.5em;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  font-family: 'FontAwesome';
+}
+
+.letters .letter.used.right:after {
+  content: '\f05d';
+  color: green;
+}
+
+.letters .letter.used.wrong:after {
+  content: '\f05c';
+  color: red;
 }
 
 /* Footer */
@@ -349,6 +370,18 @@ footer .social a:hover {
 @media (min-width: 30rem) {
   .platform, .solution {
     max-width: 15rem;
+  }
+
+  .tank {
+    --waveSize: 2vw;
+  }
+
+  .tankGlass:after {
+    font-size: 0.75rem;
+  }
+
+  .clue {
+    margin: 0.2rem;
   }
 
   /* Footer */
