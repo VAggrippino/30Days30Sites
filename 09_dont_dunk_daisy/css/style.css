@@ -237,9 +237,10 @@ header h1 {
 .answer .blank {
   display: inline-block;
   position: relative;
-  margin: 0;
   visibility: hidden;
   flex: 1 0;
+  margin: 0.2em;
+  text-align: center;
 }
 
 .answer .blank.show {
@@ -247,11 +248,13 @@ header h1 {
 }
 
 .answer .blank:after {
-  content: '_';
+  content: '';
+  border-bottom: 1px dashed black;
   visibility: visible;
   display: block;
+  width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: .2em;
   left: 0;
 }
 
@@ -288,7 +291,7 @@ header h1 {
   display: block;
   width: 100%;
   height: 0;
-  border-bottom: 1px dashed rgba(0,0,255,0.75);
+  border-bottom: 1px dotted rgba(0,0,255,0.75);
   position: absolute;
   bottom: 0.3em;
   left: 0;
@@ -341,7 +344,11 @@ footer .social a:hover {
   color: #ddd;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 30rem) {
+  .platform, .solution {
+    max-width: 15rem;
+  }
+
   /* Footer */
   footer .social ul {
     font-size: 3rem;
