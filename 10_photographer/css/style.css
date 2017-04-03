@@ -12,6 +12,36 @@ h1, h2, h3, h4, h5 {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: SlateGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header .logo {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+main [data-image] {
+  display: block;
+  background: center/cover no-repeat;
+  margin: 0.5rem;
+  width: 60vw;
+  height: calc(60vw * 0.5625);
+}
+
+main .carousel {
+  width: 80vw;
+  margin: auto;
 }
 
 /* Footer */
