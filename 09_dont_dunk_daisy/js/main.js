@@ -4,7 +4,11 @@
 const words = [
   {'word': 'apple', 'image': 'media/simple-apple.svg'},
   {'word': 'orange', 'image': 'media/nicubunu-Orange.svg'},
-  {'word': 'banana', 'image': 'media/Banana.svg'}
+  {'word': 'banana', 'image': 'media/Banana.svg'},
+  {'word': 'eyes', 'image': 'media/eyes.svg'},
+  {'word': 'clown', 'image': 'media/johnny-automatic-big-earred-clown.svg'},
+  {'word': 'baby', 'image': 'media/papapishu-Baby-girl-lying.svg'},
+  {'word': 'ears', 'image': 'media/Ears.svg'}
 ];
 const n = Math.floor(Math.random() * words.length);
 
