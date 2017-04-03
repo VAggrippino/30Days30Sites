@@ -368,6 +368,34 @@ footer .social a:hover {
   color: #ddd;
 }
 
+.winner {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../media/transparent_confetti_giphy.gif);
+  color: DeepPink;
+}
+
+.winner:after {
+  content: 'You Win!';
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  font-variant: small-caps;
+  font-size: 5vw;
+  animation: 1s alternate infinite throb;
+}
+
+@keyframes throb {
+  from { transform: scale(1); }
+  to   { transform: scale(2); }
+}
+
 @media (min-width: 30rem) {
   .platform, .solution {
     max-width: 15rem;

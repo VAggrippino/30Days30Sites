@@ -54,6 +54,7 @@ letters.forEach(letter => {
       });
       if (win) {
         document.getElementById('sound-Win').play();
+        document.querySelector('.winner').style.display = 'flex';
         gameOver = true;
       }
 
