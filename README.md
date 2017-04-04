@@ -29,3 +29,6 @@ Few people throughout all of history deserve adulation. Contemporary celebrities
 
 **09** Children's Toy / Game [Don't Dunk Daisy!](09_dont_dunk_daisy)  
 I didn't want to create another product page, so I made a game inspired by hangman.
+
+**10** Photographer: [ACME Photography](10_photographer)  
+A very basic photographer page with a jQuery carousel.
