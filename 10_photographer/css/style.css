@@ -24,19 +24,26 @@ header {
   color: white;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  min-height: 3em;
+}
+
+header .logo, header h1 {
+  font-size: 1.3rem;
 }
 
 header .logo {
-  font-size: 2rem;
   margin: 1rem;
 }
 
-main [data-image] {
+main .photo {
   display: block;
   background: center/cover no-repeat;
-  margin: 0.5rem;
+  margin: 5px;
   width: 60vw;
   height: calc(60vw * 0.5625);
+
+  max-height: 50vh;
 }
 
 main .carousel {
@@ -44,13 +51,46 @@ main .carousel {
   margin: auto;
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+body.showLightbox .lightbox {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 5px 10px rgba(255,255,255,0.5);
+  animation: 1s 1 forwards resize;
+}
+
+@keyframes resize {
+  from { max-width: 20%; max-height: 20%;   }
+  to   { max-width: 90%; max-height: 90%; }
+}
+
 /* Footer */
 footer {
   background-color: #111;
   color: #ddd;
   text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 1px;
 }
 
 footer a {
